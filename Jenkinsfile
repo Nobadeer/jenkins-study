@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Buzz Build') {
       steps {
-        echo 'Foo'
+        writeFile(file: 'foo.txt', text: 'FOO', encoding: 'UTF8')
       }
     }
 
